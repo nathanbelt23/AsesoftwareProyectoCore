@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <Compile Remove="Seguridad\ImagenGeneral.cs" />
+    <Compile Remove="Seguridad\Login.cs" />
+    <Compile Remove="Seguridad\ObtenerRolesPorUsuario.cs" />
+    <Compile Remove="Seguridad\Registrar.cs" />
+    <Compile Remove="Seguridad\RolEliminar.cs" />
+    <Compile Remove="Seguridad\RolLista.cs" />
+    <Compile Remove="Seguridad\RolNuevo.cs" />
+    <Compile Remove="Seguridad\UsuarioActual.cs" />
+    <Compile Remove="Seguridad\UsuarioActualizar.cs" />
+    <Compile Remove="Seguridad\UsuarioData.cs" />
+    <Compile Remove="Seguridad\UsuarioRolAgregar.cs" />
+    <Compile Remove="Seguridad\UsuarioRolEliminar.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Dominio\Dominio.csproj" />
+    <ProjectReference Include="..\Persistencia\Persistencia.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="8.6.2" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="6.1.1" />
+    <PackageReference Include="iTextSharp.LGPLv2.Core" Version="1.6.7" />
+  </ItemGroup>
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Seguridad\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+</Project>
